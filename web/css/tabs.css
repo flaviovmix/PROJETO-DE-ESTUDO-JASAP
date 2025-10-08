@@ -1,0 +1,41 @@
+.tabs {
+  width: 100%;
+  margin: 16px auto;
+}
+
+.tab-links {
+  display: flex;
+  gap: 8px;
+}
+
+.tab-link {
+  padding: 10px 16px;
+  border: 1px solid #444;
+  border-bottom: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: .8;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  transition: all .2s;
+}
+
+.tab-link:hover {
+  opacity: 1;
+}
+
+.tab-link.ativa {
+  opacity: 1;
+  color: orange;
+  border-color: orange;
+  border-bottom: 1px solid transparent;
+}
+
+.tab-content {
+  border: 1px solid #444;
+  border-radius: 0 6px 6px 6px;
+  padding: 16px;
+}

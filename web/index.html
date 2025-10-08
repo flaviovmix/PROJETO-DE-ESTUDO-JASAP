@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="pt-BR">
+
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/tabs.css">
+
+        <link rel="stylesheet" href="./css/index-claro.css">
+        <link rel="stylesheet" href="./css/modal-claro.css">
+
     </head>
+
     <body>
-        <div>TODO write content</div>
+        <header>
+            <div class="container">
+                <button class="btn-add" onclick="window.location.href = 'novaTarefa.html'">Nova Tarefa</button>
+            </div>
+        </header>
+
+        <div class="task-list ">
+            <div class="tabs">
+                <!-- Radios controlam as abas -->
+                <div class="tab-links">
+                    <a href="#" class="tab-link ativa">Ativas</a>
+                    <a href="#" class="tab-link">Concluídas</a>
+                </div>
+
+                <!-- Conteúdo da Aba: ATIVAS -->
+                <div class="tab-content">
+
+                    <div id="conteudo-tarefas">
+                        <div class="task baixa">
+
+                            <div class="task-content">
+                                <div class="task-title ">
+                                    <a href="novaTarefa.html" class="link-sem-estilo">TAREFA</a>
+                                </div>
+                                <div class="task-meta">
+                                    <a href="novaTarefa.html" class="link-sem-estilo">
+                                        <span><i class="fas fa-layer-group"></i>0 etapas</span>
+                                    </a>
+                                    <span><i class="fas fa-calendar-alt"></i>14 ago - 2025</span>
+                                    <span><i class="fas fa-user-alt"></i>Pedro Henrique</span>
+
+                                </div>
+                                <span class="descricao">AQUI VAI A DESCRICAO DA TAREFA</span>
+                            </div>
+
+                            <div class="task-actions">
+                                <div>
+                                    <label class="checkbox-container">
+                                        <div class="usuario_concluir">
+                                            <div class="assigned"><strong>Quinta-feira, 14 ago - 2025</strong></div>
+                                            <form action="#" method="get" style="display:inline;">
+                                                <input type="hidden" name="estado_atual" value="true">
+                                                <input type="hidden" name="ativa" value="0">
+                                                <input type="hidden" name="id_tarefa" value="118">
+                                                <input type="checkbox" name="ativo">
+                                            </form>
+                                        </div>
+                                    </label>
+                                </div>
+                                <a href="#" class="deletar-link">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </body>
+
 </html>
